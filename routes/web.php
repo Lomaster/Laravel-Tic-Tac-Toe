@@ -18,11 +18,15 @@ Route::get('/', function () {
 });
 
 Auth::routes();
-
+//Default installer route
 Route::get('/home', 'HomeController@index')->name('home');
 
+//Quick intermediate start
 Route::get('/tasks', 'TaskController@index');
 Route::post('/task', 'TaskController@store');
 Route::delete('/task/{task}', 'TaskController@destroy');
-//Route::get('/register', 'RegistrationController@create');
-//Route::post('register', 'RegistrationController@store');
+
+//Tic-tac-toe game
+Route::get('/tic-tac-toe', 'TicTacToeController@selectGame');
+Route::post('/tic-tac-toe', 'TicTacToeController@createGame');
+Route::get('/tic-tac-toe/game/{game}', 'TicTacToeController@continueGame');
