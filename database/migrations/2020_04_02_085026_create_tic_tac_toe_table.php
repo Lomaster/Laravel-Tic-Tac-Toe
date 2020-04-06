@@ -16,8 +16,11 @@ class CreateTicTacToeTable extends Migration
         Schema::create('tic_tac_toe', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id')->unsigned()->index();
-            $table->string('table');
+            $table->string('gameTable');
             $table->integer('winner')->unsigned();
+            $table->integer('turn')->unsigned();
+            $table->string('player1Name');
+            $table->string('player2Name');
             $table->timestamps();
         });
     }

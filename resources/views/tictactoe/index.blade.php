@@ -38,11 +38,14 @@
                         <tr>
                             <!-- Game table -->
                             <td class="table-text">
-                                @include('tictactoe.table', ['table' => $game->table])
+                                @include('tictactoe.table', ['table' => $game->gameTable, 'readOnly' => 1])
                             </td>
 
                             <!-- Button Continue -->
                             <td>
+                            @if($game->winner)
+                                @include('tictactoe.winner', ['game' => $game])
+                            @else
                                 <form action="{{ url('tic-tac-toe/game/'.$game->id) }}" method="GET">
                                     {{ csrf_field() }}
 
@@ -50,6 +53,7 @@
                                         <i class="fa fa-btn fa-trash"></i>Continue
                                     </button>
                                 </form>
+                            @endif
                             </td>
                         </tr>
                     @endforeach

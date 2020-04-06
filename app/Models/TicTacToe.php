@@ -14,7 +14,7 @@ class TicTacToe extends Model
      * @var array
      */
     protected $fillable = [
-        'table', 'winner'
+        'gameTable', 'winner', 'turn', 'player1Name', 'player2Name',
     ];
 
 

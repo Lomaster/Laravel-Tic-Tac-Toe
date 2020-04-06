@@ -4,7 +4,11 @@
     <div class="panel-body">
     @include('common.errors')
         <div class="panel panel-default">
-            @include('tictactoe.table', ['table' => $game->table])
+            @include('tictactoe.winner', ['game' => $game])
+            <hr>
+        </div>
+        <div class="panel panel-default">
+            @include('tictactoe.table', ['table' => $game->gameTable, 'readOnly' => $readOnly])
         </div>
         <form action="{{ url('tic-tac-toe') }}" method="GET" class="form-horizontal">
             {{ csrf_field() }}
