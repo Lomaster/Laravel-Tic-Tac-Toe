@@ -81,14 +81,13 @@ class TicTacToeController extends Controller
                 $aTable = $this->oGame->processBotTurn($aTable);
                 $iWinner = $this->oGame->haveWinner($aTable);
             }
-            if ($iWinner) {
-                $game->winner = $iWinner;
-            }
-            $game->gameTable = json_encode($aTable);
-//        $game->turn = 1;
-            $game->save();
-
         }
+        if ($iWinner) {
+            $game->winner = $iWinner;
+        }
+        $game->gameTable = json_encode($aTable);
+//        $game->turn = 1;
+        $game->save();
 
         return redirect('/tic-tac-toe/game/' . $game->id);
     }
@@ -107,6 +106,22 @@ class TicTacToeController extends Controller
         }
 
         return view('tictactoe.game', ['game' => $game, 'readOnly' => $readOnly]);
+    }
+
+    /**
+     * Delete the task
+     *
+     * @param Request $request
+     * @param TicTacToe $game
+     * @return Response
+     * @throws \Exception
+     */
+    public function destroy(Request $request, TicTacToe $game)
+    {
+//        $this->authorize('destroy', $game);
+        $game->delete();
+
+        return redirect('/tic-tac-toe');
     }
 
 }

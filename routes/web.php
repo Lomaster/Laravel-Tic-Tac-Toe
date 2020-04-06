@@ -31,3 +31,4 @@ Route::get('/tic-tac-toe', 'TicTacToeController@selectGame');
 Route::post('/tic-tac-toe', 'TicTacToeController@createGame');
 Route::get('/tic-tac-toe/game/{game}', 'TicTacToeController@continueGame');
 Route::post('/tic-tac-toe/game/turn/{game}', 'TicTacToeController@playerTurn');
+Route::delete('/tic-tac-toe/{game}', 'TicTacToeController@destroy');

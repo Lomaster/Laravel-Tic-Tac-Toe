@@ -55,6 +55,16 @@
                                 </form>
                             @endif
                             </td>
+                            <td>
+                                <form action="{{ url('tic-tac-toe/'.$game->id) }}" method="POST">
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+
+                                    <button type="submit" id="delete-task-{{ $game->id }}" class="btn btn-danger">
+                                        <i class="fa fa-btn fa-trash"></i>Удалить
+                                    </button>
+                                </form>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>

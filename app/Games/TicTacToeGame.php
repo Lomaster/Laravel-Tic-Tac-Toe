@@ -21,28 +21,51 @@ class TicTacToeGame
 
     public function haveWinner(array $aTable)
     {
+        $aResult = [];
         $iResult = 0;
-        foreach ($aTable as $aRow) {
+        foreach ($aTable as $iR => $aRow) {
+            //Check vertical lines
+            if ($aTable[0][$iR] && $aTable[1][$iR] && $aTable[2][$iR]) {
+                $iSum = $aTable[0][$iR] + $aTable[1][$iR] + $aTable[2][$iR];
+                if (($iResult = $this->checkSum($iSum))) {
+                    break;
+                }
+            }
+            $aResult[] = array_search(0, $aRow);
             $aRow = array_filter($aRow);
             if (count($aRow) < 3) {
                 continue;
             }
             $iSum = array_sum($aRow);
+            //Check horizontal lines
             if (($iResult = $this->checkSum($iSum))) {
                 break;
             }
         }
         $iSum = 0;
         if (!$iResult) {
+            //Check diagonals
             if ($aTable[0][0] && $aTable[1][1] && $aTable[2][2]) {
                 $iSum = $aTable[0][0] + $aTable[1][1] + $aTable[2][2];
-            } elseif (
+            }
+            if (
                 !($iResult = $this->checkSum($iSum))
                 && ($aTable[0][2] && $aTable[1][1] && $aTable[2][0])
             ) {
                 $iSum = $aTable[0][2] + $aTable[1][1] + $aTable[2][0];
             }
             $iResult = $this->checkSum($iSum);
+        }
+        if (!$iResult) {
+            //Check a drawn
+            if (
+                3 == count($aResult)
+                && false === $aResult[0]
+                && false === $aResult[1]
+                && false === $aResult[2]
+            ) {
+                return 3;
+            }
         }
 
         return $iResult;
