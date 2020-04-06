@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5cc12ea-2390-4fe6-a0d4-6b4eb59dfde7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Games/TicTacToeGame.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Games/TicTacToeGame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TicTacToeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TicTacToeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tictactoe/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tictactoe/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/tictactoe/winner.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tictactoe/winner.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="e5cc12ea-2390-4fe6-a0d4-6b4eb59dfde7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +51,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="laravel-ttt.local" id="0f7196a3-d751-4d4d-8c83-d36b366c689b" name="laravel-ttt.local" />
@@ -244,7 +236,7 @@
       <workItem from="1585741555858" duration="7097000" />
       <workItem from="1585812498882" duration="13605000" />
       <workItem from="1586091368620" duration="623000" />
-      <workItem from="1586164412707" duration="16033000" />
+      <workItem from="1586164412707" duration="16661000" />
     </task>
     <task id="LOCAL-00001" summary="Laravel commited">
       <created>1585728777914</created>
@@ -281,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586194456088</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="A couple of bugs were fixed.">
+      <created>1586197356957</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586197356957</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,17 +293,18 @@
     <MESSAGE value="The &quot;Quick start&quot; works correctly." />
     <MESSAGE value="Added templates and logic for pages tic-tac-toe/ and tic-tac-toe/game/{id}." />
     <MESSAGE value="Game works correctly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Game works correctly." />
+    <MESSAGE value="A couple of bugs were fixed." />
+    <option name="LAST_COMMIT_MESSAGE" value="A couple of bugs were fixed." />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585728476080">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1585728476080" />
-    <state x="94" y="7" width="1390" height="810" key="CommitChangelistDialog2" timestamp="1586194455544">
+    <state x="94" y="7" width="1390" height="810" key="CommitChangelistDialog2" timestamp="1586197356556">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="94" y="7" width="1390" height="810" key="CommitChangelistDialog2/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586194455544" />
+    <state x="94" y="7" width="1390" height="810" key="CommitChangelistDialog2/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586197356556" />
     <state x="548" y="167" key="FileChooserDialogImpl" timestamp="1585728356642">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -365,14 +365,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586166309785" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586194475310">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1586197358420">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586194475310" />
-    <state x="130" y="10" width="1252" height="804" key="find.popup" timestamp="1586187601018">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586197358420" />
+    <state x="130" y="10" width="1252" height="804" key="find.popup" timestamp="1586198063112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="130" y="10" width="1252" height="804" key="find.popup/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586187601018" />
+    <state x="130" y="10" width="1252" height="804" key="find.popup/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1586198063112" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1586196433390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
